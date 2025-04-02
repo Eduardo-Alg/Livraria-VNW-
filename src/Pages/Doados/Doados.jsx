@@ -1,4 +1,4 @@
-import livroDoado from "../../assets/livroDoado.png"
+
 import S from "../../Pages/Doados/doados.module.scss"
 import axios from "axios"
 import {useState, useEffect} from 'react'
@@ -19,6 +19,7 @@ export default function Doados(){
         <section className={S.doadosPage}>
             <h3>Livros Doados</h3>
             <article className={S.areaDoados}>
+                <div className={S.livros}>
                 {livros.map((item)=>(
                 <article key={item.id}>
                     <img src={item.imagem_url} alt="" />
@@ -27,6 +28,7 @@ export default function Doados(){
                     <p>{item.autor}</p>
                 </article>
                     ))}
+                </div>
             </article>
 
         </section>
