@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+header{
+    font-family: "Inter", sans-serif;
+    height: 15vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background: linear-gradient(90deg, rgba(0,27,47,1) 0%, rgba(0,86,149,1) 88%);
+}
+
+    .boxLogo{
+        padding-left:15px;
+        display:flex;
+        align-items:end;
+        justify-content:space-evenly;
+        width:24%;
+        color:#FFFFFF;
+        
+        img{
+            padding-right:5px;
+             width:55px;
+        }
+        h1{
+            font-size:27px;
+            color:rgba(255, 255, 255, 1);
+
+
+        }
+    }
+
+    .boxMenu{
+        padding-top:15px;
+        width:33%;
+        height:5vh;
+        ul{
+            display:flex;
+            justify-content:space-around;
+            a{
+                font-size:20px;
+                color: rgba(255, 255, 255, 1);
+
+            }
+        }
+    }
+
+    .boxInput{
+        display:flex;
+        justify-content:end;
+        width:20vw;
+        height:5vh;
+        input{
+            padding-left:20px;
+            color:#FFFFFF;
+            outline:none;
+            background:transparent;
+            border:2px solid #FFFFFF;
+            border-radius:15px;
+            width:16vw;
+            height:6vh;
+        }
+        input::placeholder{
+            font-size:15px;
+            color:#FFFFFF;
+        }
+        label{
+            position:relative;
+            right:10%;
+
+        img{
+            position:relative;
+            right:0;
+            top:33%;
+            width:17px;
+            height:17px;
+        }
+    }
+    }
+
+    @media(min-width:250px) and (max-width:400px){
+        header{
+            flex-direction:column;
+            height:auto;
+            .boxLogo{
+                padding-left:0;
+                width:100%;
+                justify-content:center;
+                align-items:center;
+                height:15vh;
+                img{
+                    width:15vw;
+                    margin-right:10px;
+                }
+                h1{
+                    padding-top:10px;
+                    font-size:100%;
+                }
+            }
+            .boxInput{
+                display:none;
+            }
+            .boxMenu{
+                padding-top:0;
+                width:100%;
+                a{
+                    font-size:85%;
+                }
+            }
+        }
+    }
+
+    @media(min-width:400px) and (max-width:450px){
+        header{
+            flex-direction:column;
+            height:20vh;
+        .boxLogo{
+            padding-left:0;
+            width:100%;
+            justify-content:center;
+            align-items:center;
+            height:15vh;
+            img{
+                width:12vw;
+                margin-right:10px;
+            }
+            h1{
+                padding-top:10px;
+                font-size:20px;
+            }
+        }
+        .boxInput{
+            display:none;
+        }
+        .boxMenu{
+            padding-top:0;
+            width:100%;
+            a{
+                font-size:15px;
+            }
+        }
+
+    }
+
+}
+
+@media(min-width:450px) and (max-width:800px){
+    header{
+        height:18vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        .boxLogo{
+            width:auto;
+            padding:10px 0 0 0;
+        }
+        .boxMenu{
+            width:100%;
+            ul{
+                justify-content:start;
+                a{
+                    font-size:15px;
+                    margin-left:12px;
+                }
+            }
+        }
+            .boxInput{
+                position: relative;
+                top: -25px;
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                input{
+                    padding-left:2%;
+                    width: 30vw;
+                }
+                input::placeholder{
+                    padding-left:4%;
+                    font-size:2vw;
+                }
+                label{
+                    right:5%;
+                }
+               
+            }
+          
+    }
+
+}
+@media(min-width:800px) and (max-width:1150px){
+    header{
+        .boxLogo{
+         width:auto;
+         img{
+            margin-right:10px;
+         }
+         h1{
+            font-size:20px;
+        }
+        }
+        .boxMenu{
+            width:auto;
+                ul{
+                    a{
+                        margin-left:15px;
+                        font-size:17px
+                    }
+                }
+        }
+        .boxInput{
+            width:auto;
+            input{
+            width:22vw;
+            padding-left:5%;
+            }
+            input::placeholder{
+                font-size:1.7vw;
+            }
+            label{
+                right:13%;
+            }
+        }
+    }
+}
+
+
+
+

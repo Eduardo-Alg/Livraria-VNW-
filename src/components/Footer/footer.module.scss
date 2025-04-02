@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+.boxFooter{
+     
+    font-family: "Inter", sans-serif;
+    .boxContatos{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:0 55px 0 55px;
+        height:15vh;
+        background: rgba(0, 86, 149, 1);
+
+        h3{
+            color:#FFFFFF;
+        }
+        nav{
+            display:flex;
+            justify-content:space-around;
+            align-items:end;
+            width:15vw;
+        a{
+            img{
+                width:30px;
+                height:30px;
+            }
+        }    
+        
+        }
+    }
+    .direitosReservados{
+        height:7vh;
+        background: rgba(35, 32, 32, 1);
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        p{
+            color:#FFFFFF;
+            font-size:16px;
+        }
+
+    }
+
+}
+
+@media(min-width:250px) and (max-width:750px){
+    .boxFooter{
+        
+      .boxContatos{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+        height:20vh;
+        padding:10px 10px 10px 10px;
+        nav{
+        align-items:center;
+        justify-content:center;
+        width:80%;
+        gap:8%;
+       
+      }
+      
+      }
+    .direitosReservados{
+        height:10vh;
+        text-align:center;
+        p{
+         font-size:12px;
+        }
+      }
+    
+        
+    }
+}
+
+@media(min-width:750px) and (max-width:1150px){
+    .boxFooter{
+        .boxContatos{
+        nav{
+            width:25vw;
+        }
+    }
+    }
+}
