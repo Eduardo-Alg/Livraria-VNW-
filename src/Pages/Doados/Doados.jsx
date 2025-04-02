@@ -19,13 +19,6 @@ export default function Doados(){
         <section className={S.doadosPage}>
             <h3>Livros Doados</h3>
             <article className={S.areaDoados}>
-                <img  src={livroDoado} alt="Livro Doado" id="imgPadrao"/>
-                <p>
-                O protagonista
-                Susanne Andrade
-                Ficção
-                </p>
-
                 {livros.map((item)=>(
                 <article key={item.id}>
                     <img src={item.imagem_url} alt="" />
